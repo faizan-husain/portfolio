@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faizan Husain | Blog#6 what HTML boilerplate tells</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="logo.ico" type="x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <a href="index.html"><img class="my-image" src="my-avatar1.png" alt="Faizan Husain" width="80"></a>
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Faizan Husain"><a href="index.html" class="name">Faizan Husain</a></h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:faizan.ndb@gmail.com" class="contact-link">faizan.ndb@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919272399002" class="contact-link">+91 9272399002</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Age</p>
+
+              <time datetime="1982-06-23">21 Years Old</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <!-- <address>International Airport Area, Pune, India</address> -->
+              <address>JWC6+HV2, Dr DY Patil Knowledge City, Via Lohgaon, Pune, 412105 India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/faizan-husain" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+    
+          <li class="social-item">
+            <a href="Faizan_Resume1.pdf" class="social-link" download="Faizan_Resume">
+              <ion-icon name="heart"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/faizan-husain-047495261/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <!-- <button class="navbar-link" data-nav-link>Back</button> -->
+            <a href="index.html" class="back-btn">Home</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      
+      <article class="about  active" data-page="about">
+      
+        <header>
+          <h2 class="h2 article-title blog-title">Blog#6 - What HTML boilerplate tells</h2>
+        </header>
+      
+        
+        <section class="about-text">
+          <p>
+            If you're involved in web development, you've probably heard the term "HTML boilerplate." But what exactly is that? Simply put, an HTML boilerplate is a basic template that contains the essential structure of an HTML document. It acts as a starting point, saves you time and ensures your code adheres to best practices..
+          </p>
+          <pre>
+            <code class="coding-text">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport"content=
+    "width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    contain 
+&lt;/body&gt;
+&lt;/html&gt;
+            </code>
+          </pre>
+          <h3>Breaking Down the Boilerplate</h3>
+
+          <pre>
+            <code class="coding-text">
+1) &lt;!DOCTYPE html&gt;
+</code>
+</pre>
+<p>This declaration informs the browser that the document uses HTML5, the latest standard.</p>
+
+<pre>
+  <code class="coding-text">
+2) &lt;html lang="en"&gt;
+</code>
+</pre>
+<p>The &lt;html&gt; tag is the root of your document, and the lang attribute specifies the language for accessibility and SEO.</p>
+
+<pre>
+  <code class="coding-text">
+3) &lt;head&gt;
+  </code>
+</pre>
+<p><b>&#x2022; &lt;meta charset="UTF-8"&gt; :</b> Ensures your page supports a wide range of characters, including emojis.</p>
+<p><b>&#x2022; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; :</b> Makes your page responsive, adapting to different screen sizes.</p>
+<p><b>&#x2022; &lt;title&gt; :</b> Defines the page title, displayed in the browser tab.</p>
+<p><b>&#x2022; &lt;link rel="stylesheet" href="styles.css"&gt; :</b> Links your external CSS file.</p>
+
+<pre>
+  <code class="coding-text">
+4) &lt;body&gt;
+</code>
+</pre>
+<p>This is where the content of your webpage lives, such as text, images, and other elements.</p>
+
+<h3>Why Use an HTML Boilerplate?</h3>
+<label><b>1. Saves Time :</b> No need to rewrite the basics for every new project.</label><br>
+<label><b>2. Ensures Consistency :</b> Starts every project with a solid, standardized structure.</label><br>
+<label><b>3. Improves SEO and Accessibility :</b> Includes key meta tags and attributes by default.</label>
+<br><br>
+<h3>Tips for Using Boilerplates</h3>
+<label>&#x2022; Create your own custom boilerplate tailored to your projects.</label><br>
+<label>&#x2022; Use frameworks like HTML5 Boilerplate for more advanced templates.</label><br>
+<label>&#x2022; Always update meta tags and file paths as needed.</label>
+<br><br>
+<p>Starting with a boilerplate ensures your web development projects have a solid foundation. It’s a simple yet powerful way to kickstart your creativity while adhering to best practices.</p>
+
+
+        </section>
+      </article>
+    </div>
+    
+</main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

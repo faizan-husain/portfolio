@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faizan Husain | Blog#5 how to integrate SQL server to c#</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="logo.ico" type="x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <a href="index.html"><img class="my-image" src="my-avatar1.png" alt="Faizan Husain" width="80"></a>
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Faizan Husain"><a href="index.html" class="name">Faizan Husain</a></h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:faizan.ndb@gmail.com" class="contact-link">faizan.ndb@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919272399002" class="contact-link">+91 9272399002</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Age</p>
+
+              <time datetime="1982-06-23">21 Years Old</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <!-- <address>International Airport Area, Pune, India</address> -->
+              <address>JWC6+HV2, Dr DY Patil Knowledge City, Via Lohgaon, Pune, 412105 India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/faizan-husain" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+    
+          <li class="social-item">
+            <a href="Faizan_Resume1.pdf" class="social-link" download="Faizan_Resume">
+              <ion-icon name="heart"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/faizan-husain-047495261/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <!-- <button class="navbar-link" data-nav-link>Back</button> -->
+            <a href="index.html" class="back-btn">Home</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      
+      <article class="about  active" data-page="about">
+      
+        <header>
+          <h2 class="h2 article-title blog-title">Blog#5 - How to integrate SQL Server to C#</h2>
+        </header>
+      
+        
+        <section class="about-text">
+          <p>
+            When building applications with C#, it's often necessary to interact with a database to store, retrieve, or modify data. One of the most popular databases is SQL Server, and in this blog, we’ll guide you through the process of connecting your C# application to a SQL Server database. By the end, you’ll know how to interact with your database using basic operations like SELECT, INSERT, UPDATE, and DELETE.
+          </p>
+          <h3>What Do You Need?</h3><br>
+          <p><b>&#x2022; 1. SQL Server :</b> The database server where your data is stored.</p>
+          <p><b>&#x2022; 2. Visual Studio :</b> The IDE where you write and run your C# application.</p>
+          <p><b>&#x2022; 3. SQL Server Management Studio (SSMS) :</b> A tool for managing your SQL Server database.</p>
+          <p><b>&#x2022; 4. Connection String :</b> A string that contains information required to connect to your SQL Server database, such as the server name, database name, username, and password.</p>
+
+          <h4><u>Step 1</u> : Set Up SQL Server</h4>
+          <p><b>&#x2022; 1. Install SQL Server :</b> Download and install SQL Server (Express Edition is free).</p>
+          <p><b>&#x2022; 2. Create a Database :</b> Use SQL Server Management Studio (SSMS) to create a new database. For example, let’s create a database named <b class="coding-text">MyDatabase</b>.</p>
+          <p><b>&#x2022; 3. Create a Table :</b> You can create a table within the database to store your data. For example, create a simple table called <b class="coding-text">Users</b> :</p>
+          <pre>
+              <code class="coding-text">
+CREATE TABLE Users (
+    Id INT PRIMARY KEY,
+    Name NVARCHAR(100),
+    Age INT
+    );              
+                    </code>
+                </pre>
+            <h4><u>Step 2</u> : Install SQL Server Client Library in C#</h4>
+            <p>In your C# application, you need to install the SQL Server client library. This allows your application to communicate with SQL Server.</p>
+            <p>1. Open <b>Visual Studio</b> and create a new <b>Console Application</b>.</p>
+            <p>2. Open <b>NuGet Package Manager</b> by right-clicking on your project in the Solution Explorer and selecting <b>Manage NuGet Packages</b>.</p>
+            <p>3. Search for and install the package <b>System.Data.SqlClient</b> (or Microsoft.Data.SqlClient for newer versions).</p>
+            <h4><u>Step 3</u> : Write C# Code to Connect to SQL Server</h4>
+            <p>Now it’s time to write C# code that will connect to the SQL Server database. We will use SqlConnection to establish a connection.</p>
+            <pre>
+                <code class="coding-text">
+using System;
+using System.Data.SqlClient;
+
+class Program
+{
+    static void Main()
+    {
+        // Define the connection string
+        string connectionString = 
+        "Server=your_server_name;
+        Database=MyDatabase;User 
+        Id=your_username;
+        Password=your_password;";
+        
+        // Create a connection to SQL Server
+        using (SqlConnection connection 
+        = new SqlConnection(connectionString))
+        {
+            try
+            {
+                // Open the connection
+                connection.Open();
+                Console.WriteLine
+                ("Connected successfully!");
+                
+            //Perform database operations here
+            }
+            catch (Exception ex)
+            {
+Console.WriteLine("Error: " + ex.Message);
+}
+}
+}
+}
+
+</code>
+</pre>
+<p>Replace the <label style="background-color: rgb(77, 77, 77);">&nbsp;your_server_name&nbsp;</label> , <label style="background-color: rgb(77, 77, 77);">&nbsp;your_username&nbsp;</label> , and <label style="background-color: rgb(77, 77, 77);">&nbsp;your_password&nbsp;</label> with your actual SQL Server credentials. The <label style="background-color: rgb(77, 77, 77);">&nbsp;connectionString&nbsp;</label> is the key to establishing the connection between your C# application and SQL Server.</p>
+<h4><u>Step 4</u> : Execute SQL Queries</h4>
+<p>Once the connection is established, you can perform database operations like SELECT, INSERT, UPDATE, and DELETE.</p>
+<b>Example 1: SELECT Query (Retrieve Data)</b>
+<pre>
+    <code class="coding-text">
+string query = "SELECT * FROM Users";
+SqlCommand cmd = new SqlCommand
+(query, connection);
+
+// Execute the query and get the result
+SqlDataReader reader = cmd.ExecuteReader();
+while (reader.Read())
+{
+    Console.WriteLine($"Id: {reader["Id"]},
+    Name: {reader["Name"]}, 
+    Age: {reader["Age"]}");
+}
+reader.Close();
+        
+        
+    </code>
+</pre>
+<b>Example 2: INSERT Query (Add Data)</b>
+<pre>
+    <code class="coding-text">
+string insertQuery = "INSERT INTO Users 
+  (Id, Name, Age) VALUES(1, 'John Doe', 30)";
+SqlCommand insertCommand = new 
+  SqlCommand(insertQuery, connection);
+
+//Execute the query without returning data
+insertCommand.ExecuteNonQuery();  
+Console.WriteLine("inserted successfully!");
+    </code>
+</pre>
+
+<b>Example 3: UPDATE Query (Modify Data)</b>
+<pre>
+    <code class="coding-text">
+string updateQuery = 
+    "UPDATE Users SET Age = 31 WHERE Id = 1";
+SqlCommand updateCommand = 
+    new SqlCommand(updateQuery, connection);
+    // Execute the query
+updateCommand.ExecuteNonQuery();  
+Console.WriteLine("updated successfully!");
+
+    </code>
+</pre>
+
+<b>Example 4: DELETE Query (Remove Data)</b>
+<pre>
+    <code class="coding-text">
+string deleteQuery = 
+    "DELETE FROM Users WHERE Id = 1";
+SqlCommand deleteCommand = 
+    new SqlCommand(deleteQuery, connection);
+    // Execute the query
+deleteCommand.ExecuteNonQuery();  
+Console.WriteLine("deleted successfully!");
+    </code>
+</pre>
+<h4><u>Step 5</u> : Close the Connection</h4>
+<p>Once you are done with the database operations, it’s important to close the connection to free up resources.</p>
+<pre>
+    <code class="coding-text">
+connection.Close();
+Console.WriteLine("Connection closed.");
+
+    </code>
+</pre>
+<h3>Conclusion</h3>
+<p>Interacting with SQL Server from a C# application is straightforward once you understand the basic steps : </p>
+          <p>&#x2022; 1. Install the SQL Server client library.</p>
+          <p>&#x2022; 2. Set up a SQL Server database and create tables.</p>
+          <p>&#x2022; 3. Write code to establish a connection using SqlConnection.</p>
+          <p>&#x2022; 4. Perform operations like SELECT, INSERT, UPDATE, and DELETE using SqlCommand.</p>
+          <p>&#x2022; 5. Always close the connection when done.</p>
+          <p>With these steps, you can easily connect your C# application to SQL Server and begin working with data.</p>
+</section>
+</article>
+    </div>
+    
+</main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

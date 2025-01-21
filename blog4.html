@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faizan Husain | Blog#4 debugging, finding and fixing code error</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="logo.ico" type="x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <a href="index.html"><img class="my-image" src="my-avatar1.png" alt="Faizan Husain" width="80"></a>
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Faizan Husain"><a href="index.html" class="name">Faizan Husain</a></h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:faizan.ndb@gmail.com" class="contact-link">faizan.ndb@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919272399002" class="contact-link">+91 9272399002</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Age</p>
+
+              <time datetime="1982-06-23">21 Years Old</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <!-- <address>International Airport Area, Pune, India</address> -->
+              <address>JWC6+HV2, Dr DY Patil Knowledge City, Via Lohgaon, Pune, 412105 India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/faizan-husain" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+    
+          <li class="social-item">
+            <a href="Faizan_Resume1.pdf" class="social-link" download="Faizan_Resume">
+              <ion-icon name="heart"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/faizan-husain-047495261/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <!-- <button class="navbar-link" data-nav-link>Back</button> -->
+            <a href="index.html" class="back-btn">Home</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      
+      <article class="about  active" data-page="about">
+      
+        <header>
+          <h2 class="h2 article-title blog-title">Blog#4 - Debugging, Finding and Fixing code error</h2>
+        </header>
+      
+        
+        <section class="about-text">
+          <p>
+            Coding can be a lot of fun, but sometimes your code doesn’t work as expected. That’s where debugging comes in! Debugging is the process of finding and fixing mistakes, or "bugs," in your code. It’s a skill every programmer needs, whether you’re a beginner or an expert.
+
+            <p>In this blog, we’ll learn what debugging is, common types of errors, and simple ways to fix them. Let’s get started!</p>
+          </p>
+          <h3>What Is Debugging?</h3>
+          <p>When you write code, errors are normal. Debugging is like being a detective: you look for clues (errors), find the problem, and fix it. Every time you solve a bug, you learn something new and become a better programmer.</p>
+
+          <h3>Common Types of Errors</h3>
+          <h4>1. Syntax Error</h4>
+          <p>These happen when you write code that the computer doesn’t understand. For example, missing a semicolon or using the wrong spelling for a command.</p>
+          <h5>Example:</h5>
+          <pre>
+            <code class="coding-text">
+# Missing closing quotation mark
+print("Hello World)  
+            </code>
+          </pre>
+
+          <h4>2. Runtime Error</h4>
+          <p>These happen while your program is running. For example, dividing a number by zero or trying to use a variable that hasn’t been created yet.</p>
+          <h5>Example:</h5>
+          <pre>
+            <code class="coding-text">
+# This causes a runtime error
+x = 10 / 0  
+            </code>
+          </pre>
+
+          <h4>1. Logical Error</h4>
+          <p>These are the hardest to find because your program works but doesn’t do what you want. For example, a program that calculates the wrong result because of a mistake in the logic.</p>
+          <h5>Example:</h5>
+          <pre>
+            <code class="coding-text">
+def add_numbers(a, b):
+    # Wrong operation, should be addition
+    return a - b  
+            </code>
+          </pre>
+
+          <h3>How to Debug Your Code</h3><br>
+          <h4>1. Read Error Messages Carefully</h4>
+          <p>When an error occurs, your programming tool will often show you a message. It tells you what went wrong and where to look. Pay close attention to these clues.</p>
+          <h4>2. Use Print Statements</h4>
+          <p>Add print statements to your code to check what’s happening. This helps you see the values of variables and where the error might be.</p>
+          <h5>Example:</h5>
+          <pre>
+            <code class="coding-text">
+x = 5
+y = 0
+# Check the values before dividing
+print("x:", x, "y:", y)  
+# This will show where the error is
+print(x / y)  
+            </code>
+          </pre>
+
+          <h3>3. Check One Thing at a Time</h3>
+          <p>If you have a lot of code, test small parts separately. This helps you find which part of the code is causing the error.</p>
+
+          <h3>4. Use Debugging Tools</h3>
+          <p>Many programming tools (like Visual Studio Code or PyCharm) have built-in debuggers. They let you pause your code, check variables, and step through it line by line.</p>
+
+          <h3>5. Search for Help</h3>
+          <p>If you’re stuck, search online! Websites like Stack Overflow or tutorials often have answers to common problems. You’re not alone—others have likely faced the same issue.</p>
+
+          <h3>Tips to Avoid Bugs in the First Place</h3><br>
+          <p>&#x2022; <b>Write Clean Code : </b> Use meaningful names for variables and add comments to explain your code.</p>
+          <p>&#x2022; <b>Test Often : </b> Run your code regularly as you write it, so you can catch errors early.</p>
+          <p>&#x2022; <b>Learn from Mistakes : </b> Each bug is a chance to learn. Write down what you fixed to avoid the same mistake later.</p>
+          <h3>Conclusion</h3>
+          <p>Debugging is an essential part of coding, and it’s something all programmers face. It might feel frustrating at first, but with practice, you’ll get better at finding and fixing errors quickly. Remember, every error you fix makes you a stronger coder.
+
+            So the next time your code doesn’t work, don’t panic! Grab your debugging toolkit, follow the steps above, and solve the problem like a pro.
+            
+            Happy debugging!</p>
+
+        </section>
+      </article>
+    </div>
+    
+</main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faizan Husain | Blog#3 let's familier to binary search tree(BST)</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="logo.ico" type="x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <a href="index.html"><img class="my-image" src="my-avatar1.png" alt="Faizan Husain" width="80"></a>
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Faizan Husain"><a href="index.html" class="name">Faizan Husain</a></h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:faizan.ndb@gmail.com" class="contact-link">faizan.ndb@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919272399002" class="contact-link">+91 9272399002</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Age</p>
+
+              <time datetime="1982-06-23">21 Years Old</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <!-- <address>International Airport Area, Pune, India</address> -->
+              <address>JWC6+HV2, Dr DY Patil Knowledge City, Via Lohgaon, Pune, 412105 India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/faizan-husain" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+    
+          <li class="social-item">
+            <a href="Faizan_Resume1.pdf" class="social-link" download="Faizan_Resume">
+              <ion-icon name="heart"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/faizan-husain-047495261/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <!-- <button class="navbar-link" data-nav-link>Back</button> -->
+            <a href="index.html" class="back-btn">Home</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      
+      <article class="about  active" data-page="about">
+      
+        <header>
+          <h2 class="h2 article-title blog-title">Blog#3 - Let's Familier To Binary Search Tree(BST)</h2>
+        </header>
+      
+        
+        <section class="about-text">
+            <h3>What is a Binary Search Tree?</h3>
+          <p>
+            A Binary Search Tree (BST) is a fundamental data structure in computer science. It organizes data in a way that makes searching, inserting, and deleting operations efficient.
+            <p>In this blog, we’ll explain what a BST is and walk you through creating one step by step.</p>
+        </p>
+        <h3>Terminology</h3>
+        <p>A Binary Search Tree is a special type of binary tree where each node follows these rules:</p>
+        <p><b>1. Left Child Rule :</b> The value of the left child node is less than the value of its parent node.</p>
+        <p><b>2. Right Child Rule :</b> The value of the right child node is greater than the value of its parent node.</p>
+          <h3>Step-by-Step Guide to Constructing a Binary Search Tree (BST)</h3>
+        <h5>Example:</h5>
+        <p>Let’s construct a Binary Search Tree (BST) step by step using a set of values. A BST has a rule:</p>
+        <p><b>&#x2022; For each node :</b></p>
+        <p>&#x2022; Values smaller than the node go to the left.</p>
+        <p>&#x2022; Values larger than the node go to the right.</p>
+        <p>We will build a BST using the following values:</p>
+        <p><b>[50, 30, 70, 20, 40, 60, 80]</b></p>
+
+        <!-- steps bst -->
+        <h4><u>Step 1</u> : Start with the Root Node</h4>
+        <p>The first value becomes the root of the tree.</p>
+        <p>&#x2022; Insert <b>50</b></p>
+          <pre>
+            <code class="coding-text">
+                    50  
+            </code>
+          </pre>
+
+        <h4><u>Step 2</u> : Insert the Next Value (30)</h4>
+        <p>&#x2022; <b>30</b> is smaller than <b>50</b>, so it becomes the left child of <b>50</b>.</p>
+          <pre>
+            <code class="coding-text">
+                50
+                /
+               30  
+            </code>
+          </pre>
+
+        <h4><u>Step 3</u> : Insert the Next Value (70)</h4>
+        <p>&#x2022; <b>70</b> is larger than <b>50</b>, so it becomes the right child of <b>50</b>.</p>
+          <pre>
+            <code class="coding-text">
+                 50
+                /  \
+               30   70 
+            </code>
+          </pre>
+
+        <h4><u>Step 4</u> : Insert the Next Value (20)</h4>
+        <p>&#x2022; <b>20</b> is smaller than <b>50</b>, go left.</p>
+        <p>&#x2022; <b>20</b> is smaller than <b>30</b>, so it becomes the left child of <b>30</b>.</p>
+          <pre>
+            <code class="coding-text">
+                 50
+                /  \
+              30    70
+             /
+            20 
+            </code>
+          </pre>
+
+        <h4><u>Step 5</u> : Insert the Next Value (40)</h4>
+        <p>&#x2022; <b>40</b> is smaller than <b>50</b>, go left.</p>
+        <p>&#x2022; <b>40</b> is larger than <b>30</b>, so it becomes the right child of <b>30</b>.</p>
+          <pre>
+            <code class="coding-text">
+                 50
+                /  \
+              30    70
+             /  \
+            20   40
+         
+            </code>
+          </pre>
+
+        <h4><u>Step 6</u> : Insert the Next Value (60)</h4>
+        <p>&#x2022; <b>60</b> is larger than <b>50</b>, go right.</p>
+        <p>&#x2022; <b>60</b> is smaller than <b>70</b>, so it becomes the left child of <b>70</b>.</p>
+          <pre>
+            <code class="coding-text">
+                  50
+                /   \
+              30     70
+             /  \    /
+            20  40 60
+         
+            </code>
+          </pre>
+
+        <h4><u>Step 7</u> : Insert the Next Value (80)</h4>
+        <p>&#x2022; <b>80</b> is larger than <b>50</b>, go right.</p>
+        <p>&#x2022; <b>80</b> is larger than <b>70</b>, so it becomes the right child of <b>70</b>.</p>
+          <pre>
+            <code class="coding-text">
+                  50
+                /   \
+              30     70
+             /  \    / \
+            20  40 60   80
+         
+            </code>
+          </pre>
+<h3>Summary of Insertion Steps</h3>
+<label>&#x2022; 1. Compare the new value with the current node.</label><br>
+<label>&#x2022; 2. Move left if the value is smaller, move right if it’s larger.</label><br>
+<label>&#x2022; 3. Continue until you find an empty spot, then insert the value there.</label>
+<br><br>
+<p><i>Building a BST step by step helps you visualize how data is organized efficiently for fast searching, inserting, and deleting.</i>
+          
+    <h3>Why Use a Binary Search Tree?</h3><br>
+    <p><b>&#x2022; 1. Fast Searching :</b> Searching in a balanced BST takes O(logn) time.</p>
+    <p><b>&#x2022; 2. Efficient Insertions and Deletions :</b> Both operations are quick, maintaining the sorted structure.</p>
+    <p><b>&#x2022; 3. Applications :</b> BSTs are used in databases, file systems, and more.</p>
+
+    <h3>Limitations of BSTs</h3><br>
+    <p><b>&#x2022; 1. Unbalanced Trees :</b> If the tree becomes unbalanced (e.g., like a linked list), search time can degrade to O(n).</p>
+    <p><b>&#x2022; 2. Maintenance :</b> You may need to use self-balancing trees, like AVL or Red-Black Trees, for better performance.</p>
+
+    <h3>Conclusion</h3>
+    <p>Binary Search Trees are a powerful and efficient way to store and manage data. By following the step-by-step process above, you can build and use your own BST. With practice, you’ll find that BSTs are not only useful but also a great introduction to more advanced data structures.
+
+       <p> Happy coding! </p>
+        </section>
+      </article>
+    </div>
+    
+</main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

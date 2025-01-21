@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faizan Husain | Blog#2 five5 arts of responsiveness</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="logo.ico" type="x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <a href="index.html"><img class="my-image" src="my-avatar1.png" alt="Faizan Husain" width="80"></a>
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Faizan Husain"><a href="index.html" class="name">Faizan Husain</a></h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:faizan.ndb@gmail.com" class="contact-link">faizan.ndb@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919272399002" class="contact-link">+91 9272399002</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Age</p>
+
+              <time datetime="1982-06-23">21 Years Old</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <!-- <address>International Airport Area, Pune, India</address> -->
+              <address>JWC6+HV2, Dr DY Patil Knowledge City, Via Lohgaon, Pune, 412105 India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/faizan-husain" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+    
+          <li class="social-item">
+            <a href="Faizan_Resume1.pdf" class="social-link" download="Faizan_Resume">
+              <ion-icon name="heart"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/faizan-husain-047495261/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <!-- <button class="navbar-link" data-nav-link>Back</button> -->
+            <a href="index.html" class="back-btn">Home</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      
+      <article class="about  active" data-page="about">
+      
+        <header>
+          <h2 class="h2 article-title blog-title">Blog#2 - 5 Arts of Responsiveness</h2>
+        </header>
+      
+        
+        <section class="about-text">
+          <p>
+            In today’s digital age, people access websites on a variety of devices, from large desktop monitors to compact smartphones. This diversity in screen sizes makes responsive web design an essential skill for developers and designers. A responsive web page adapts seamlessly to different screen sizes and ensures an optimal user experience, no matter the device.
+          </p>
+          <p>In this blog, we’ll explore the art of creating responsive web pages, why it’s important, and how you can master the techniques.</p>
+          <h3>What is a Responsive Web Page?</h3>
+          <p>A responsive web page dynamically adjusts its layout, images, text, and other elements to fit the size and orientation of the device screen. Instead of designing multiple versions of a website, responsive design uses a single design framework to adapt to all devices.</p>
+          <p>For example : </p>
+          <p>&#x2022; On a desktop, you may see a multi-column layout.</p>
+          <p>&#x2022; On a smartphone, the same page shifts to a single-column layout for better readability.</p>
+          <h3>Why is Responsive Web Design Important?</h3><br>
+          <p><b>1. Improved User Experience (UX) : </b> Responsive design ensures that users can navigate, read, and interact with your website easily, regardless of their device.</p>
+          <p><b>2. SEO Benefits : </b> Responsive design ensures that users can navigate, read, and interact with your website easily, regardless of their device.</p>
+          <p><b>3. Cost Efficiency : </b> Instead of creating separate websites for mobile and desktop, a single responsive website saves time and money.</p>
+          <p><b>4. Future-Proofing : </b> With the constant evolution of devices, responsive design ensures your website remains functional on new screen sizes.</p>
+          <hr><br>
+
+          <h3>#5 Core Principles of Responsive Design</h3><br>
+          <h4><u>1. Flexible Layouts : </u></h4>
+          <p>Use CSS Grid or Flexbox to create layouts that adjust to different screen sizes. These techniques help in designing fluid grids where elements resize proportionally.</p>
+          
+          <h4><u>2. Media Queries : </u></h4>
+          <p>Media queries in CSS allow you to apply different styles based on the device’s screen size or resolution. For example:</p>
+          <pre><code class="coding-text">
+    @media (max-width: 768px) {
+        body {
+            font-size: 16px;
+        }
+    }</code>
+            </pre>
+            <h4><u>3. Fluid Images : </u></h4>
+            <p>Ensure images scale proportionally to their parent container by using CSS properties like :</p>
+            <pre>
+                <code class="coding-text">
+    img {
+        max-width: 100%;
+        height: auto;
+    }</code>
+            </pre>
+            <h4><u>4. Typography Adjustments : </u></h4>
+            <p>Use relative units like em, rem, or percentages for font sizes to make text scalable.</p>
+            <h4><u>5. Mobile-First Approach : </u></h4>
+            <p>Start designing for smaller screens first and then expand for larger screens. This approach ensures that critical elements remain functional on mobile devices.</p>
+          <hr><br>
+            <h3>Techniques for Creating Responsive Web Pages</h3><br>
+            <ol>
+                <li><b>1. Grid Systems</b></li>
+                <p>Use a grid system to organize your content. Frameworks like Bootstrap provide pre-defined grids that simplify responsive design.</p>
+                <li><b>2. Flexible Navigation Menus</b></li>
+                <label>&#x2022; Use a hamburger menu for smaller screens.</label><br>
+                <label>&#x2022; Use horizontal menus for larger screens.</label>
+                <li><b>3. Viewport Meta Tag</b></li>
+                <p>Include the viewport meta tag in your HTML to ensure proper scaling on mobile devices : </p>
+                <pre><code class="coding-text">
+&lt;meta name="viewport" content=
+"width=device-width,initial-scale=1.0"&gt;</code>
+                </pre>
+                <li><b>4. Breakpoints</b></li>
+                <p>Define breakpoints where your layout changes to adapt to the screen size. Common breakpoints are : </p>
+                <label>&#x2022; Extra Small Devices (Phones): <label style="background-color: rgb(77, 77, 77);">&nbsp;max-width: 576px&nbsp;</label></label><br>
+                <label>&#x2022; Small Devices (Tablets): <label style="background-color: rgb(77, 77, 77);">&nbsp;max-width: 768px&nbsp;</label></label><br>
+                <label>&#x2022; Medium Devices (Desktops): <label style="background-color: rgb(77, 77, 77);">&nbsp;max-width: 992px&nbsp;</label></label>
+                <li><b>5. Test Across Devices</b></li>
+                <p>Test your website on different devices and browsers to ensure consistent performance. Tools like Chrome DevTools or BrowserStack can simulate various screen sizes.</p>
+            </ol>
+
+            <h2>Examples of Responsive Design in Action</h2>
+            <h4>1. Responsive Grid</h4>
+            <pre><code class="coding-text">
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(300px, 1fr));
+    gap: 20px;
+}    
+</code>
+</pre>
+
+            <h4>2. Responsive Image</h4>
+            <pre><code class="coding-text">
+ &lt;img src="example.jpg" alt="Example Image" 
+ style="max-width: 100%; height: auto;"&gt;
+</code>
+</pre>
+
+            <h4>3. Responsive Button</h4>
+            <pre><code class="coding-text">
+    .button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+    @media (max-width: 600px) {
+        .button {
+            font-size: 0.8rem;
+            padding: 8px 16px;
+        }
+    }
+</code>
+</pre>
+
+<h3>Conclusion</h3>
+<p>Responsive web design is more than just a trend—it’s a necessity in today’s digital landscape. By mastering techniques like flexible layouts, media queries, and fluid images, you can create websites that look great and function well on any device. Remember, a responsive website not only improves user experience but also boosts your site’s visibility and credibility.</p>
+<p>Start building your responsive web pages today and make the web accessible to everyone!</p>
+        </section>
+      </article>
+    </div>
+    
+</main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

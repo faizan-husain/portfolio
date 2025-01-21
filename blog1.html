@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faizan Husain | Blog#1 how to achieved multiple inheritance in java</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="logo.ico" type="x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <a href="index.html"><img class="my-image" src="my-avatar1.png" alt="Faizan Husain" width="80"></a>
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Faizan Husain"><a href="index.html" class="name">Faizan Husain</a></h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:faizan.ndb@gmail.com" class="contact-link">faizan.ndb@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919272399002" class="contact-link">+91 9272399002</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Age</p>
+
+              <time datetime="1982-06-23">21 Years Old</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <!-- <address>International Airport Area, Pune, India</address> -->
+              <address>JWC6+HV2, Dr DY Patil Knowledge City, Via Lohgaon, Pune, 412105 India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/faizan-husain" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+    
+          <li class="social-item">
+            <a href="Faizan_Resume1.pdf" class="social-link" download="Faizan_Resume">
+              <ion-icon name="heart"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/faizan-husain-047495261/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <!-- <button class="navbar-link" data-nav-link>Back</button> -->
+            <a href="index.html" class="back-btn">Home</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      
+      <article class="about  active" data-page="about">
+      
+        <header>
+          <h2 class="h2 article-title blog-title">Blog#1 - How to achieved Multiple inheritance in java</h2>
+        </header>
+      
+        
+        <section class="about-text">
+          <p>
+            In object-oriented programming, multiple inheritance is a feature that allows a class to inherit from more than one class. While this is common in some programming languages like C++, Java does not support multiple inheritance directly with classes to avoid complexity and errors like the <b>"Diamond Problem".</b>
+          </p>
+          <p>
+            However, Java provides a way to achieve multiple inheritance using <b>interfaces</b>. In this blog, we’ll explain what multiple inheritance is, why Java restricts it with classes, and how to achieve it with interfaces.
+          </p>
+          <h3>What is Multiple Inheritance?</h3>
+          <p>Multiple inheritance means a class can inherit from more than one parent class. This allows the child class to use properties and methods from all the parent classes.</p>
+          <h5>For example, imagine :</h5><br>
+          <p>&#x2022; A class <label style="background-color: rgb(77, 77, 77);">&nbsp;Vehicle&nbsp;</label> provides basic vehicle features.</p>
+          <p>&#x2022; A class <label style="background-color: rgb(77, 77, 77);">&nbsp;Engine&nbsp;</label> provides engine-related functionalities.</p>
+          <p>&#x2022; A class <label style="background-color: rgb(77, 77, 77);">&nbsp;Car&nbsp;</label> inherits from both <label style="background-color: rgb(77, 77, 77);">&nbsp;Vehicle&nbsp;</label> and <label style="background-color: rgb(77, 77, 77);">&nbsp;Engine&nbsp;</label> to combine these features.</p>
+
+          <h3>Why Does Java Restrict Multiple Inheritance with Classes?</h3>
+          <p>Java does not allow a class to inherit from more than one class because of potential conflicts and ambiguity. This often happens due to the <b>Diamond Problem</b>.</p>
+          <h4>The Diamond Problem</h4>
+          <p>Imagine two classes, <label style="background-color: rgb(77, 77, 77);">&nbsp;ClassA&nbsp;</label> and <label style="background-color: rgb(77, 77, 77);">&nbsp;ClassB&nbsp;</label> , both have a method with the same name (e.g., <label style="background-color: rgb(77, 77, 77);">&nbsp;display()&nbsp;</label> ). If a class <label style="background-color: rgb(77, 77, 77);">&nbsp;ClassC&nbsp;</label>inherits from both <label style="background-color: rgb(77, 77, 77);">&nbsp;ClassA&nbsp;</label> and <label style="background-color: rgb(77, 77, 77);">&nbsp;ClassB&nbsp;</label>, the compiler won’t know which <label style="background-color: rgb(77, 77, 77);">&nbsp;display()&nbsp;</label> method to use.</p>
+          <p>To avoid such confusion, Java restricts multiple inheritance with classes.</p>
+          <h3>How to Achieve Multiple Inheritance in Java?</h3>
+          <p>In Java, you can achieve multiple inheritance using interfaces. Interfaces allow a class to inherit behavior from multiple sources without the risk of conflicts because the implementing class provides the method definitions.</p>
+          <h4>What is an Interface?</h4>
+          <p>An interface in Java is like a blueprint. It contains method declarations but no implementations. A class that implements an interface must provide the implementation for all its methods.</p>
+
+          <h3>Example : Multiple Inheritance with Interfaces</h3>
+          <p>Let’s say we have two interfaces: <label style="background-color: rgb(77, 77, 77);">&nbsp;Printable&nbsp;</label> and <label style="background-color: rgb(77, 77, 77);">&nbsp;Scannable&nbsp;</label> . A class <label style="background-color: rgb(77, 77, 77);">&nbsp;PrinterScanner&nbsp;</label> implements both to provide functionalities of both interfaces.</p>
+          <pre>
+            <code class="coding-text">
+// Define Interface 1
+interface Printable {
+    void print();
+}
+
+// Define Interface 2
+interface Scannable {
+    void scan();
+}
+
+// Implement Both Interfaces in a Single Class
+class PrinterScanner implements Printable,
+Scannable {
+    // Provide Implementation for Printable
+    public void print() {
+        System.out.println("Print document");
+    }
+
+    // Provide Implementation for Scannable
+    public void scan() {
+        System.out.println("Scan document");
+    }
+}
+
+// Main Class
+public class Main {
+    public static void main(String[] args) {
+      PrinterScanner ps = new PrinterScanner();
+
+        // Output: Printing the document...
+        ps.print();  
+        // Output: Scanning the document...
+        ps.scan();   
+    }
+}
+                
+            </code>
+          </pre>
+<h3>Benefits of Using Interfaces for Multiple Inheritance</h3><br>
+<p><b>&#x2022; 1. Flexibility :</b> A class can inherit behavior from multiple sources.</p>
+<p><b>&#x2022; 2. Avoids Diamond Problem :</b> The implementing class defines the method, so there’s no ambiguity.</p>
+<p><b>&#x2022; 3. Loose Coupling :</b> Interfaces promote abstraction, making code more flexible and easier to maintain.</p>
+<h3>Conclusion</h3>
+<p>While Java doesn’t support multiple inheritance with classes, it allows you to achieve it safely and effectively using interfaces. By implementing multiple interfaces, a class can combine behaviors from different sources without encountering the complications of the Diamond Problem.</p>
+<p>Understanding how to use interfaces is a key step in mastering Java and writing clean, modular code. Happy coding! 🎉</p>
+
+
+        </section>
+      </article>
+    </div>
+    
+</main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
